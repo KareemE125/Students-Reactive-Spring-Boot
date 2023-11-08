@@ -54,7 +54,16 @@ To run this project, follow these steps:
 5. **Access the API**: The API will be available at `http://localhost:8080/api/v1/students`. You can use tools like `curl`, Postman, or your web browser to interact with it.
 
 6. **Populate the Database**: Uncomment the CommandLineRunner in the Main Class.
+   
+7. **See The Streaming Response Effect**: Try adding delay a funtion and test it in the browser. For Example:
 
+    ```
+    // In the service class
+    public Flux<Student> getAll() {
+        // adding delay of 2 seconds as if there is heavy processing for each record is made
+        return studentRepo.findAll().delayElements(Duration.ofSeconds(2));
+    }
+    ```
 
 ## Contributing
 
