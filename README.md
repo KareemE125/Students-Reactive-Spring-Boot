@@ -53,6 +53,8 @@ To run this project, follow these steps:
 
 5. **Access the API**: The API will be available at `http://localhost:8080/api/v1/students`. You can use tools like `curl`, Postman, or your web browser to interact with it.
 
+6. **Populate the Database**: Uncomment the CommandLineRunner in the Main Class.
+
 
 ## Contributing
 
