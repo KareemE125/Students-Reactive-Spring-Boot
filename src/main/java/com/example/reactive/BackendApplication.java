@@ -1,7 +1,7 @@
-package com.ke.backend;
+package com.example.reactive;
 
-import com.ke.backend.services.StudentService;
-import com.ke.backend.tables.Student;
+import com.example.reactive.services.StudentService;
+import com.example.reactive.tables.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
